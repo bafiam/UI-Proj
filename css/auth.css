@@ -1,0 +1,31 @@
+form {
+    margin:0px auto;
+    width:300px
+}
+body{
+    background-color: whitesmoke;
+}
+
+input {
+    margin-bottom:3px;
+    padding:10px;
+    border:1px solid #CCC;
+    width: 100%;
+
+}
+button {
+    padding:10px
+}
+.sign-up-form{
+    margin-top: 60px;
+}
+.form-title{
+    align-content: center;
+    margin-left: 450px;
+}
+#submit{
+    background-color: lightgreen;
+}
+#submit-2{
+    background-color: lightblue;
+}
