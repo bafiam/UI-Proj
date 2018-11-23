@@ -33,7 +33,7 @@
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 100px;
+
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -119,7 +119,7 @@ body, html {
     color: white;
 }
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
