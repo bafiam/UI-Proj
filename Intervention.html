@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Dash-board</title>
     <link href="./css/Home_dashboard.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/Red-flag.css" rel="stylesheet" type="text/css" media="all">
     <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,7 +17,7 @@
         <a class="active" href="Intervention.html"><i class="fa fa-fw fa-wrench"></i>Intervention Reports</a>
         <a href="Profile.html"><i class="fa fa-fw fa-user"></i>Profile</a>
 
-    </div></div>../Profile/
+    </div></div>
 <div class="content">
     <div class="body-dashboard">
         <header>
@@ -28,16 +29,48 @@
         <div class="body">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <P> Welcome to intervention</P>
+                    <div class="col-lg-12" style="padding-top: 50px">
+                        <div style="overflow-x:auto;padding-top: 40px">
+                            <h2>intervention Record <button class="btn success" onclick="location.href='create-inter.html'" type="button">Create </button></h2>
+
+                            <table>
+                                <tr>
+                                    <th style="width:50%; "></th>
+                                    <th>Name: </th>
+                                    <th>Date: </th>
+                                    <th>Amount:  </th>
+                                    <th>Address</th>
+                                    <th>Describe intervention Detection and Actions: </th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><i>stephen</i></td>
+                                    <td><i>4/3/1232</i></td>
+                                    <td><i>123344</i></td>
+                                    <td><i>25-122</i></td>
+                                    <td><i>aaaaaaaaaaaaaaaaaaaaaaaaaa</i></td>
+                                    <td ><button class="btn info">Edit</button></td>
+                                    <td ><button class="btn danger">Delete</button></td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><i>stephen</i></td>
+                                    <td><i>4/3/1232</i></td>
+                                    <td><i>123344</i></td>
+                                    <td><i>25-122</i></td>
+                                    <td><i>aaaaaaaaaaaaaaaaaaaaaaaaaa</i></td>
+                                    <td ><button class="btn info">Edit</button></td>
+                                    <td ><button class="btn danger">Delete</button></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
     </div></div>
 <div class="footer">
     <p>Copy-Right@2018</p>
-</div>
-
-</body>
+</div></div></body>
 </html>
