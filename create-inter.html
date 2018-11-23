@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dash-board</title>
+    <link href="./css/Home_dashboard.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/Red-flag.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="./css/create-rf.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="home-dashboard">
+    <div class="side-panel-dashboard">
+        <!-- The sidebar -->
+        <a href="Home_dashboard.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+        <a class="active" href="Red-flag.html"><i class="fa fa-fw fa-wrench"></i>Red-Flag Reports</a>
+        <a href="Intervention.html"><i class="fa fa-fw fa-wrench"></i>Intervention Reports</a>
+        <a href="Profile.html"><i class="fa fa-fw fa-user"></i>Profile</a>
+
+    </div>
+</div>
+<div class="content">
+    <div class="body-dashboard">
+        <header>
+            <div class="topnav">
+                <a class="active" href="#">Create Intervention records</a>
+                <div class="top-nav-header-right">
+
+                    <a href="index.html"><i aria-hidden="true"></i>Log-out</a>
+                </div>
+            </div>
+
+        </header>
+        <div class="body">
+            <div class="container">
+                <form action="", method="get">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Name of the Red-flag">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date">Date:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="date" name="date" placeholder="Todays date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Amount">Amount:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Amount" name="Amount" placeholder="Amount insinuated">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Address">Address:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Address" name="Address" placeholder="Your address">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Describe Intervention Detection and Actions:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Describe Red Flag Detection and Actions" style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit" >
+                        <input type="reset" value="Cancel" class="btn danger" onclick="location.href='Intervention.html'" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Copy-Right@2018</p>
+</div>
+
+</body>
+</html>
