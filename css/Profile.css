@@ -51,7 +51,7 @@
     border-radius: 18em;
 }
 
-.user-profile ul.data {
+.records ul.data {
     margin: 2em auto;
     height: 3.70em;
     background: #3bb6a3;
@@ -78,10 +78,10 @@
 }
 /*table for cases*/
 /* Style the table */
-table {
+.records table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 150%;
+    width: 90%;
     border: 1px solid #ddd;
 }
 
@@ -91,19 +91,6 @@ th, td {
     padding: 16px;
 }
 
-th:first-child, td:first-child {
-    text-align: left;
-}
 
-/* Zebra-striped table rows */
-tr:nth-child(even) {
-    background-color: #f2f2f2
-}
 
-.fa-check {
-    color: green;
-}
 
-.fa-remove {
-    color: red;
-}
