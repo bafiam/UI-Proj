@@ -120,3 +120,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background: #ff9800;
     color: white;
 }
+.select-option{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.select-option:hover{
+    background: #ff9800;
+    color: white;
+}

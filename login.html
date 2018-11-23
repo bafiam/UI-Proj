@@ -9,16 +9,36 @@
     <div class="form-title">
         <h1> IRepoter User Login</h1>
     </div>
-    <form id="form-register", action="", method="POST">
+    <form id="form-register" onsubmit="validate(event)" method="POST">
         <label>Username:</label>
-        <input type="text" placeholder="Enter Username" required>
+        <input type="text" name="username" id="username" placeholder="Enter Username" required>
         <label>Password:</label>
-        <input type="password" placeholder="Enter New Password" required>
-        <button id="submit-2" type="submit"><a href="Home_dashboard.html">Log in</a></button>
+        <input type="password" name="password" id="password" placeholder="Enter  Password" required>
+        <button id="submit-2" type="submit" >Log in</button>
         <a href="sign-up.html"><span>Register</span> </a>
 
     </form>
 
 </div>
+<script>
+    function validate(e) {
+        e.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === 'admin' &&  password === 'admin') {
+            window.location = "Admin.html";
+            //alert('success');
+            return true;
+        }
+        else {
+            window.location = "Home_dashboard.html";
+            //alert('fail');
+            return false;
+        }
+
+    }
+</script>
 </body>
 </html>
