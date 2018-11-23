@@ -12,10 +12,8 @@
 <div class="home-dashboard">
     <div class="side-panel-dashboard">
         <!-- The sidebar -->
-        <a href="Home_dashboard.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
-        <a class="active" href="Red-flag.html"><i class="fa fa-fw fa-wrench"></i>Red-Flag Reports</a>
-        <a href="Intervention.html"><i class="fa fa-fw fa-wrench"></i>Intervention Reports</a>
-        <a href="Profile.html"><i class="fa fa-fw fa-user"></i>Profile</a>
+        <a class="active" href="Admin.html"><i class="fa fa-fw fa-wrench"></i>records status</a>
+        <a href="Admin-2.html"><i class="fa fa-fw fa-wrench"></i>All Records</a>
 
     </div>
 </div>
@@ -23,7 +21,7 @@
     <div class="body-dashboard">
         <header>
             <div class="topnav">
-                <a class="active" href="#">Red-flags records</a>
+                <a class="active" href="#">ADMIN </a>
                 <div class="top-nav-header-right">
 
                     <a href="index.html"><i aria-hidden="true"></i>Log-out</a>
@@ -36,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12" style="padding-top: 50px">
                         <div style="overflow-x:auto;padding-top: 40px">
-                            <h2>Red-Flag Record-Updates<button class="btn success" onclick="location.href='create-rf.html'" type="button">Create </button></h2>
+                            <h2>Red-Flag and Intervention status</h2>
 
                             <table>
                                 <tr>
@@ -46,6 +44,7 @@
                                     <th>Amount:  </th>
                                     <th>Address</th>
                                     <th>Describe Red Flag Detection and Actions: </th>
+                                    <th>Status: </th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -54,9 +53,14 @@
                                     <td><i>123344</i></td>
                                     <td><i>25-122</i></td>
                                     <td><i>aaaaaaaaaaaaaaaaaaaaaaaaaa</i></td>
-                                    <td ><button class="btn info">Edit</button></td>
-                                    <td ><button class="btn warning"onclick="location.href='update-rf.html'">Update</button>
-                                    <td ><button class="btn danger">Delete</button></td>
+                                    <td >
+                                        <select class="select-option">
+                                            <option >Resolved</option>
+                                            <option >Yet to be resolved</option>
+                                            <option >Rejected.</option>
+                                            <option >Under investigation</option>
+                                        </select>
+
 
                                 </tr>
                                 <tr>
@@ -66,9 +70,14 @@
                                     <td><i>123344</i></td>
                                     <td><i>25-122</i></td>
                                     <td><i>aaaaaaaaaaaaaaaaaaaaaaaaaa</i></td>
-                                    <td ><button class="btn info">Edit</button></td>
-                                    <td ><button class="btn warning"onclick="location.href='update-rf.html'">Update</button></td>
-                                    <td ><button class="btn danger">Delete</button></td>
+                                    <td > <select class="select-option">
+                                        <option >Resolved</option>
+                                        <option >Yet to be resolved</option>
+                                        <option >Rejected.</option>
+                                        <option >Under investigation</option>
+                                    </select>
+                                    </td>
+
                                 </tr>
                             </table>
                         </div>
