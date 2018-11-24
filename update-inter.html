@@ -51,6 +51,17 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-25">
+                            <label>Add Your location:</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="button" onclick="getLocation()" value="Geo-location">
+                        </div>
+                        <div class="col-25">
+                            <p id="location"></p>
+                        </div>
+                    </div>
+                    <div class="row">
                         <input type="submit" value="Update" >
                         <input type="reset" value="Cancel" class="btn danger" onclick="location.href='Red-flag.html'" >
                     </div>
@@ -62,6 +73,19 @@
 <div class="footer">
     <p>Copy-Right@2018</p>
 </div>
-
+<script>
+    var x = document.getElementById("location");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
 </body>
 </html>
