@@ -16,7 +16,7 @@
         <a class="active" href="Red-flag.html"><i class="fa fa-fw fa-wrench"></i>Red-Flag Reports</a>
         <a href="Intervention.html"><i class="fa fa-fw fa-wrench"></i>Intervention Reports</a>
         <a href="Profile.html"><i class="fa fa-fw fa-user"></i>Profile</a>
-
+</header>
     </div>
 </div>
 <div class="content">
@@ -36,7 +36,7 @@
                 <form action="", method="get">
                     <div class="row">
                         <div class="col-25">
-                            <label for="name">Add image on the Red-flag record:</label>
+                            <label for="image">Add image on the Red-flag record:</label>
                         </div>
                         <div class="col-75">
                             <input type="file" name="image " accept="image/*">
@@ -44,10 +44,21 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="date">Add video on the Red-flag record:</label>
+                            <label for="video">Add video on the Red-flag record:</label>
                         </div>
                         <div class="col-75">
                             <input type="file" name="video" accept="video/*">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Add Your location:</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="button" onclick="getLocation()" value="Geo-location">
+                        </div>
+                        <div class="col-25">
+                            <p id="location"></p>
                         </div>
                     </div>
                     <div class="row">
@@ -62,6 +73,19 @@
 <div class="footer">
     <p>Copy-Right@2018</p>
 </div>
-
+<script>
+    var x = document.getElementById("location");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
 </body>
 </html>
