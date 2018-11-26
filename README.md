@@ -7,6 +7,9 @@ general public. Users can also report on things that needs government intervent
 1. Chrome or Mozilla
 ## Installation
 1.Clone the project - 'git@github.com:bafiam/UI.git'
-
+2.To access admin portal use:
+  username:"admin",
+  password:"admin"
+3 User can user any username and password of choice
 # Usage
   Use Google chrome extension
